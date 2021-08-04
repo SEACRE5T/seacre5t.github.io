@@ -1,0 +1,23 @@
+.results {
+  &__container {
+    overflow: hidden;
+    height: 90vh;
+  }
+  &__par {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    text-shadow: 4px -4px 4px rgba(150, 150, 150, 0.489);
+  }
+} 
+
+
+@keyframes slide-top {
+  0% {
+    transform: translateY(1000px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

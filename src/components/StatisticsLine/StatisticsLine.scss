@@ -1,0 +1,59 @@
+.line {
+  &__block {
+    display: flex;
+    align-items: center;
+    padding: 15px 40px;
+    font-size: 26px;
+  }
+  &__text, &__only-text {
+    color: white;
+    padding-left: 10px;
+    text-transform: uppercase;
+  }
+  &__only-text {
+    margin: 0 auto;
+    animation:scale-up-center .4s cubic-bezier(.39,.575,.565,1.000) both
+  }
+  &__259, &__230, &__80, &__600, &__200, &__500, &__900, &__90, &__550 {
+    background-color: white;
+    height: 16px;
+  }
+  &__259 {
+    animation: px259 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  &__230 {
+    animation: px230 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  &__80 {
+    animation: px80 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  &__600 {
+    animation: px600 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  &__200 {
+    animation: px200 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  &__500 {
+    animation: px500 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  &__900 {
+    animation: px900 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  &__90 {
+    animation: px90 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  &__550 {
+    animation: px550 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+}
+
+@keyframes px259 {0% {width: 0;} 100% {width: 25%;}}
+@keyframes px230 {0% {width: 0;} 100% {width: 23%;}}
+@keyframes px80 {0% {width: 0;} 100% {width: 8%;}}
+@keyframes px600 {0% {width: 0;} 100% {width: 55%;}}
+@keyframes px200 {0% {width: 0;} 100% {width: 20%;}}
+@keyframes px500 {0% {width: 0;} 100% {width: 50%;}}
+@keyframes px900 {0% {width: 0;} 100% {width: 70%;}}
+@keyframes px550 {0% {width: 0;} 100% {width: 55%;}}
+@keyframes px90 {0% {width: 0;} 100% {width: 9%;}}
+@keyframes scale-up-center{0%{transform:scale(.5)}100%{transform:scale(1)}}

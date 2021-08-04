@@ -1,0 +1,57 @@
+.start-page {
+  &__container {
+    text-align: center;
+    // display: grid;
+    // grid-template-columns: repeat(2, 1fr);
+    padding-top: 5%;
+  }
+  &__human {
+    align-items: center;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &__title {
+    color: white;
+    padding: 10px 0;
+    font-size: 40px;
+  }
+  &__link-block {
+    position: absolute;
+    top: 90%;
+    right: 8%;
+    font-size: 35px;
+    text-align: center;
+    padding: 10px 0;
+  }
+}
+
+.img {
+  &-static {
+    width: 250px;
+    height: 250px;
+    pointer-events: none;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  &-motion {
+    width: 600px;
+    height: 600px;
+  }  
+}  
+
+@media (prefers-reduced-motion: no-preference) {
+  .motion {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+

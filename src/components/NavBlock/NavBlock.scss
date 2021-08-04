@@ -1,0 +1,18 @@
+.link {
+  &-block {
+    position: absolute;
+    top: 90%;
+    right: 8%;
+    font-size: 35px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+  }
+  &-button {
+    text-decoration: none;
+    color: white;
+  }
+  &-button + &-button {
+    margin-left: 10px;
+  }
+}

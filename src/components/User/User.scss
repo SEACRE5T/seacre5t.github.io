@@ -1,0 +1,26 @@
+.user {
+  &__container {
+    display: grid;
+    justify-items: center;
+    color: white;
+    font-size: 18px;
+    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+  &__photo {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 3px;
+    object-fit: cover;
+    object-position: 0 0;
+
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
